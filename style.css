@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --font: "Outfit", sans-serif;
+    ;
+    --color-purple: #8323FF;
+    --color-pink: #FF2DAF;
+    --color-yellow: #FEEA35;
+    --color-grey-dark: #1E1F28;
+    --color-grey: #2B2B37;
+    --color-grey-medium: #373745;
+    --color-grey-light: #8B8D9B;
+    --color-white: #FFFFFF;
+    --background-button-hover: linear-gradient(to right, #9F55FF, #FF46B9);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, var(--color-purple), var(--color-pink));
+    display: grid;
+    place-content: center;
+    font-family: var(--font);
+}
+
+.container {
+    width: 84.6rem;
+    height: 63.2rem;
+    background-color: var(--color-grey-dark);
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #C497FF, #9747FF);
+    border-image-slice: 10;
+    padding: 6.4rem 9.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.6rem;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .button-recomend a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: var(--font);
+    font-size: 1.6rem;
+    text-decoration: none;
+    background: linear-gradient(to right, var(--color-purple), var(--color-pink));
+    width: 22rem;
+    height: 4.8rem;
+    border-radius: 4px;
+    padding: 0.8rem 1.6rem;
+    color: var(--color-white);
+}
+
+.top .button-recomend a:hover {
+    background: var(--background-button-hover)
+}
+
+.recommendations {
+    display: flex;
+    gap: 3.6rem;
+}
+
+.film {
+    width: 19.4rem;
+}
+
+.film .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.film .section h3 {
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 400;
+    height: 4rem;
+    width: 14rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.film .nota {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.film .nota span {
+    color: var(--color-yellow);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.poster img {
+    height: 28.9rem;
+    width: 19.4rem;
+    border-radius: 8px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.info .details-info {
+    display: flex;
+    gap: 4px;
+
+}
+
+.info span {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--color-grey-light);
+}
+
+.button-play-trailer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    background-color: var(--color-grey);
+    height: 4.4rem;
+    width: 19.4rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.6rem;
+
+}
+
+.button-play-trailer a:hover{
+    background-color: var(--color-grey-medium);
+}
